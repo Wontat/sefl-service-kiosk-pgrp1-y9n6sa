@@ -1,0 +1,9 @@
+.red {
+  color: red;
+  font-weight: 800;
+}
+
+.amount {
+  font-weight: 800;
+  padding: 0 10px;
+}

@@ -1,0 +1,13 @@
+<li class="list-group-item">
+  <div class="row justify-content-between">
+    <div class="col-xs-4 align-self-center">
+      {{ cartItem.item.name }} -
+      <span class="red">{{ cartItem.item.price * cartItem.amount }}</span>
+    </div>
+    <div class="col-xs-4 align-self-center">
+      <button class="btn btn-danger" (click)="decrease(cartItem)">-</button>
+      <span class="amount">{{ cartItem.amount }}</span>
+      <button class="btn btn-primary" (click)="increase(cartItem)">+</button>
+    </div>
+  </div>
+</li>

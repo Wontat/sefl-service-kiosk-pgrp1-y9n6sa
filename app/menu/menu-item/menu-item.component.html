@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="pull-left col-sm-4">
+    <h4>{{ item.name }}</h4>
+    <p>{{ item.description }}</p>
+    <p class="price">{{ item.price }} Php</p>
+  </div>
+  <div class="col-sm-4">
+    <img class="pull-right" src="{{ item.imgUrl }}" height="80px" />
+  </div>
+  <div class="pull-left col-sm-4">
+    <div class="row">
+      <button class="btn btn-danger" (click)="onMinus()">-</button>
+      <button class="btn btn-default" (click)="onAdd(item, amount)">
+        {{ amount }}
+      </button>
+      <button class="btn btn-success" (click)="onPlus()">+</button>
+    </div>
+    <!-- <button class="btn btn-danger" (click)="onAdd(item)">Place Order</button> -->
+  </div>
+</div>

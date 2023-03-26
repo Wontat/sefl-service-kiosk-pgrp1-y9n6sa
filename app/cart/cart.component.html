@@ -1,0 +1,12 @@
+<h3>Orders:</h3>
+
+<ul class="list-group">
+  <app-cart-item
+    *ngFor="let item of cartItems"
+    [cartItem]="item"
+  ></app-cart-item>
+</ul>
+
+Total: {{ total }}
+
+<button (click)="printCart()">Proceed to Checkout</button>
